@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head lang="ch">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="../source/js/head-inside.js"></script>
+    <link rel="stylesheet" href="../source/css/index.css">
+    <title>Login</title>
+</head>
+<body>
+<h1><a href="javascript: doWxLogin()">请求微信登录链接</a></h1>
+<div id="div-link"></div>
+<form id="form" target="hidden-frame"></form>
+<iframe id="hidden-frame" name="hidden-frame" src="hidden-iframe.html" frameborder="0">
+
+</iframe>
+<script src="../source/js/body-outside.js"></script>
+<script>
+ document.write("<script src=\"../source/js/login.js?t="+Math.random()+"\"><\/script>");
+</script>
+
+</body>
+</html>

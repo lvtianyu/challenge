@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>红包列表</title>
+  <script src="../source/js/head-inside.js"></script>
+  <link rel="stylesheet" href="../source/css/grab-red.css">
+  <link rel="stylesheet" href="../source/css/iscroll.css">
+  <!-- <script>
+  var userName;
+  var gameId ;
+  userName = locache.session.get("userName"); //得到系统的userName//sessionStorage.getItem("userName");
+  //userAge = sessionStorage.getItem("userAge");
+  gameId = oGetVars.gameId;
+  checkWxLogin({
+	  	r: "/pages/grab-red.html",
+	  	p: "gameId=" + gameId,
+	  });
+  
+  </script> -->
+</head>
+
+<body>
+
+  <div id="wrapper">
+  		<div id="scroller">
+
+  			  <div id="scroller-pullDown">
+    				<span id="down-icon" class="pull-down-icon">↓</span>
+    				<span id="pullDown-msg" class="pull-down-msg">回到我的红包页</span>
+    			</div>
+
+    			<div id="scroller-content">
+
+  <!--内容-->
+  <div class="container-fluid clite-padding0">
+    <div class="clite-grabred-bg">
+
+      	<span id="btn-check-challenge" class="clite-head-back2" >
+        查看活动 > </span>
+
+      <img class="clite-grabred-head-portrait" id="userImg" src="../source/img/img-defaule-head.png" />
+
+    </div>
+      <div class="clite-bg-white nickName">
+          <span id="nickName">xxx</span>
+          <span class="clite-grabred-money-span">的红包</span>
+      </div>
+    <div class="clite-bg-white clite-grabred-money" id="error">
+        <span id="redAccount">0</span>
+      <span class="clite-grabred-money-span">元</span>
+    </div>
+
+    <div class="clite-bg-white clite-grabred-margintop14" id="lucy">
+      <div class="clite-grabred-luck">大家的手气：</div>
+      <div class="redList">
+
+      <!--<div class="clite-row clearfix" onclick="user-challenge.html'">
+        <div class="pull-left clite-grabred-row-left">
+          <img src="../source/img/app-icon72x72@2x.png" class="clite-head-img clite-vertical-middle" />
+          <div class="clite-head-text clite-vertical-middle hide">丽</div>
+        </div>
+        <div class="pull-left clite-grabred-row-left clite-grabred-name">
+          小美女
+        </div>
+        <div class="pull-right clite-grabred-row-right text-right">
+          1.23元
+        </div>
+      </div>
+
+      <div class="clite-row clearfix" onclick="user-challenge.html'">
+        <div class="pull-left clite-grabred-row-left">
+          <img src="../source/img/img-test.png" class="clite-head-img clite-vertical-middle" />
+          <div class="clite-head-text clite-vertical-middle hide">丽</div>
+        </div>
+        <div class="pull-left clite-grabred-row-left clite-grabred-name">
+          小美女
+        </div>
+        <div class="pull-right clite-grabred-row-right text-right">
+          1.23元
+        </div>
+      </div>
+
+      <div class="clite-row clearfix" onclick="user-challenge.html'">
+        <div class="pull-left clite-grabred-row-left">
+          <img src="../source/img/img-test.png" class="clite-head-img clite-vertical-middle" />
+          <div class="clite-head-text clite-vertical-middle hide">丽</div>
+        </div>
+        <div class="pull-left clite-grabred-row-left clite-grabred-name">
+          小美女
+        </div>
+        <div class="pull-right clite-grabred-row-right text-right">
+          1.23元
+        </div>
+      </div>
+
+      <div class="clite-row clearfix" onclick="user-challenge.html'">
+        <div class="pull-left clite-grabred-row-left">
+          <img src="../source/img/img-defaule-head.png" class="clite-head-img clite-vertical-middle" />
+          <div class="clite-head-text clite-vertical-middle hide">丽</div>
+        </div>
+        <div class="pull-left clite-grabred-row-left clite-grabred-name">
+          小美女
+        </div>
+        <div class="pull-right clite-grabred-row-right text-right">
+          <div class="clite-grabred-crown">
+            <img src="../source/img/img-crown.png">
+            <div class="clite-grabred-crown-text">10倍</div>
+          </div>
+          12.3元
+        </div>
+      </div>
+-->
+    </div>
+    </div>
+  </div>
+  <!--内容结束-->
+
+</div>
+
+<div id="scroller-pullUp">
+  <span id="up-icon" class="pull-up-icon">
+    ↑
+  </span>
+  <span id="pullUp-msg" class="pull-up-msg">
+    刷新看看大家的手气
+  </span>
+</div>
+
+</div>
+</div>
+
+
+<div id="remindPicture" class="remindPecture">
+    <div class="remindPicture-up">
+
+        <div class="remindPicture-pullDown">
+            <img src="../source/img/pullDown.png">
+        </div>
+        <div class="remindPicture-goUpIndex">
+            <img src="../source/img/goUpIndex.png">
+        </div>
+
+
+    </div>
+    <div class="remindPicture-center">
+        <img src="../source/img/lDo.png">
+    </div>
+</div>
+
+
+  <script src="../source/js/body-outside.js"></script>
+  <!--<script src="../source/js/iscroll.min.js"></script>-->
+  <!--<script src="../source/js/iscroll-util.js"></script>-->
+
+	<script>
+	  document.write("<script src=\"../source/js/grab-red.js"
+			  //+"?t="+Math.random()
+			  +"\"><\/script>");
+	</script>
+
+</body>
+
+</html>

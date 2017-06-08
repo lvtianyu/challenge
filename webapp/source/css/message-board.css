@@ -1,0 +1,194 @@
+/**{*/
+    /*margin: 0;*/
+    /*padding:0;*/
+    /*list-style: none;*/
+    /*font-family: "微软雅黑", "Arial", serif;*/
+
+/*}*/
+
+
+body{
+    background-color: #f8f8f8;
+}
+.head{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    /*color: #fff;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%,from(rgb(35,230,206)), to(rgb(53,211,206)));*/
+    background: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+#day{
+    /*text-align: right;
+    font-size: 25px;
+    padding-right:3px;*/
+}
+#day1,#day2{
+    /*font-size:8px;*/
+}
+.message-day{
+    text-align: right;
+    font-size: 12px;
+    color:#4c4c4c;
+    margin-top: 4px;
+}
+.remove-padding-right{
+    padding-right:0px;
+    padding-left:15px;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+.remove-padding-left{
+    padding-left:1px;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+.text-center{
+    text-align: center;
+}
+.text-color{
+    color:#aaa;
+
+}
+.text-left{
+    padding-left: 5px;
+}
+.text-cursor{
+    cursor: pointer;
+}
+.section{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.messageText{
+    width:100%;
+    border-width:0;
+    padding:0;
+    border-style:none;
+    padding-left: 30px;
+    border:0;
+    box-shadow:none;
+}
+
+.messageBtn{
+    /*position: absolute;
+    top:5px;
+    right:0;*/
+    height:50px;
+    font-size: 16px;
+    text-align: right;
+    line-height: 50px;
+    color: #545454;
+}
+
+/**去除默认效果*/
+.navbar{
+    min-height: 0px;
+    border:none;
+    background: #fff;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+
+.clite-message-row-left {
+  height: 52px;
+  line-height: 52px;
+  color: #555555;
+  font-size: 40px;
+  position: relative;
+}
+
+.clite-message-datatext {
+  color: #777777;
+  font-size: 12px;
+  margin-left: 4px;
+}
+.clite-message-margintop10 {
+  margin-top: 10px;
+}
+
+.clite-padding16{
+  padding-left: 16px;
+  padding-right: 16px;
+  /*border-bottom: 1px solid #e6e6e6;*/
+}
+
+.clite-row{
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.clite-margin0{
+  margin: 0 0;
+}
+
+.clite-message-input{
+  border-radius: 0;
+    height: 50px;
+  padding: 0 0;
+  font-size: 16px;
+}
+#messageBtn{
+    padding: 0;
+    text-align: center;
+}
+#backgroundTU{
+    position: absolute;
+    z-index: 9999;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
+.backgroundTUxuan{
+    margin: 0 auto;
+    margin-top: 50%;
+    width: 50px;
+    -ms-animation:rotate 1s infinite linear;
+    -webkit-animation:rotate 1s infinite linear;
+    animation:rotate 1s infinite linear;
+}
+@-moz-keyframes rotate{
+    0%{
+        -ms-transform:rotate(0deg);
+    }
+    100%{
+        -ms-transform:rotate(360deg);
+    }
+}
+@-webkit-keyframes rotate{
+    0%{
+        -webkit-transform:rotate(0deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.messageNome{
+    text-align: center;
+    display: none;
+}
+
+input:focus {
+    outline: -webkit-focus-ring-color auto 0;
+}
+
+
+
+/*# sourceMappingURL=app.baf4ea2.css.map*/

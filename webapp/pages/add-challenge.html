@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head lang="ch">
+    <meta charset="UTF-8">
+    <title>创建活动</title>
+    <script src="../source/js/head-inside.js"></script>
+    <script>
+//        if(!userName){
+//            checkWxLogin("pages/add-challenge.html")
+//        }
+    </script>
+    <link rel="stylesheet" href="../source/css/add-challenge.css">
+    <link rel="stylesheet" href="../source/css/iscroll.css">
+    <style>
+        .cover {
+            text-align: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: #F0F0F0;
+            z-index: 100;
+        }
+
+        .verification-box {
+            width: 80%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -40%;
+            margin-top: -3.4rem;
+            background-color: #fff;
+            border-radius: 6px;
+        }
+
+        .verification-title,
+        .verification {
+            text-align: center;
+            font-size: 0.38rem;
+            line-height: 1rem;
+        }
+
+        .verification-content {
+            font-size: 0.3rem;
+            border-top: 1px solid #C9C9C9;
+            border-bottom: 1px solid #C9C9C9;
+            padding-left: 1%;
+            line-height: 1rem;
+        }
+
+        .verification-content input {
+            border: none;
+            font-size: 0.3rem;
+            height: 1rem;
+            width: 3rem;
+            padding-left: 0.1rem;
+        }
+
+        .verification-phone input {
+            width: 3rem;
+            height: 1rem;
+            padding-left: 0.1rem;
+        }
+
+        .verification-content div {
+            box-sizing: border-box;
+            border-bottom: 1px solid #C9C9C9;
+            min-height: 1rem;
+        }
+
+        .verification-content div:nth-child(2) {
+            border: none;
+        }
+
+        .verification-content span {
+            float: right;
+            width: 2rem;
+            line-height: 1.04rem;
+            text-align: center;
+            background-color: #ddd;
+            border-radius: 6px;
+            margin-right: 0.1rem;
+            color: #FFF;
+        }
+
+        .verification-box .active {
+            color: #fff;
+            background-color: #2F91EC
+        }
+    </style>
+</head>
+
+<body>
+
+<!--<div id="wrapper">-->
+    <!--<div id="scroller">-->
+
+        <!--<div id="scroller-pullDown">-->
+            <!--<span id="down-icon" class="pull-down-icon">↓</span>-->
+            <!--<span id="pullDown-msg" class="pull-down-msg">回到首页</span>-->
+        <!--</div>-->
+        <!--<div id="scroller-content">-->
+            <div id="container">
+
+                <form class="clite-form" id="formAddChallenge">
+                    <div class="clite-bg-white">
+                        <div class="clite-row clearfix">
+                            <div class="col-xs-4 clite-row-left clite-padding0" for="challenge-target">
+                                目标
+                                ：
+                            </div>
+                            <div class="col-xs-4 clite-row-right text-right clite-padding0">
+                                <input type="number" class="form-control clite-vertical-middle clite-form-input"
+                                       placeholder="比如100" id="challenge-target" value="">
+                            </div>
+                            <div class="col-xs-4 clite-row-right clite-padding0 text-right">
+                                卡路里
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clite-prompt-message1">
+                        1卡 ≈ 20步,您相当于走了
+                        <span id="walk-distance"></span> 步
+                    </div>
+
+                    <div class="clite-bg-white">
+                        <div class="clite-row clearfix">
+                            <div class="col-xs-12 clite-padding0">
+                                <textarea id="challenge-desc" placeholder="活动描述" type="text" value=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix clite-margintop20 clite-margin btn-save" id="btn-save">
+                        <div class="clite-row-left col-xs-12 clite-padding0">
+                            <button type="button" class="btn clite-btn-bg btn-block clite-btn-height" >保存</button>
+                        </div>
+                    </div>
+
+                </form>
+
+                <div id="div-util-btns" class="row clite-container text-center">
+                    <div class="col-xs-4" id="btnAddWelfare">
+                        <img src="../source/img/edit-ico01.png" title="增加福利" class="clite-edit-icon"/>
+                        <div class="clite-icon-text">增加福利</div>
+                    </div>
+                    <div class="col-xs-4 " id="updataImgHead">
+                        <img id="" src="../source/img/edit-ico02.png" title="添加照片" class="clite-edit-icon"/>
+                        <div class="clite-icon-text">添加照片</div>
+                    </div>
+                    <div class="col-xs-4" id="challengeDetail">
+                        <img src="../source/img/edit-ico03.png" title="预览分享" class="clite-edit-icon"/>
+                        <div class="clite-icon-text">预览分享</div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="updataImg">
+                    <div class="row ">
+                        <div class="col-xs-12 modal-height" id="wrapper2">
+                            <div id="scroller2">
+                                <ul>
+                                    <li>
+                                        <span class="xuan "> ×</span>
+                                        <img src="../source/img/img-defaule-head.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span class="xuan "> ×</span>
+                                        <img src="../source/img/img-defaule-head.png" alt="">
+                                    </li>
+                                    <li>
+                                        <span class="xuan "> ×</span>
+                                        <img src="../source/img/img-defaule-head.png" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row weixinBottom " id="yesUp">
+                        <div class="col-xs-12">
+                            <div class="btn clite-btn-bg clite-btn-height btn-block"> 上传图片</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--增加福利层-->
+
+                <div class="clite-remind-layer" id="addWelfare" style="display: none">
+                    <div class="clite-remind-container1" >
+                        <div class="modal-header clite-modal-header">
+                            <button type="button" class="close" id="close"><span aria-hidden="true">&times;</span>
+                            </button>
+                            <h4 class="modal-title">当前福利<span id="myModalLabel"></span>元</h4>
+                        </div>
+                        <div class="modal-body clite-remind-layer-body1">
+                            <form class="clite-form">
+                                <div class="clite-bg-white">
+                                    <div class="clite-row clearfix clite-margin0">
+                                        <div class="col-xs-5 clite-row-left clite-padding0" for="challenge-fuli">
+                                            增加福利
+                                            ：
+                                        </div>
+                                        <div class="col-xs-5 clite-row-right text-right clite-padding0">
+                                            <input id="challenge-fuli" type="text" placeholder="如1元" value="2"
+                                                   class="form-control clite-vertical-middle clite-form-input">
+                                        </div>
+                                        <div class="col-xs-2 clite-row-right text-right clite-padding0">
+                                            元
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clite-prompt-message1 clite-padding-flfr0">
+                                    活动结束后, 增加的福利将以红包的形式发给您的好友。
+                                </div>
+
+                                <!--<div class="clite-redMoney">当前红包余额：<span id="redbag-amount">0</span>元</div>-->
+
+                            </form>
+
+                        </div>
+                        <div class="modal-footer row clite-marginleftright0 clite-padding0">
+                            <div class="col-xs-12 text-center clite-btn-okcancle clite-cancle" id="weixin">
+                                微信支付
+                            </div>
+
+                            <!--<div class="col-xs-12 text-center clite-btn-okcancle clite-ok" id="addWelfare-red">-->
+                                <!--红包支付-->
+                            <!--</div>-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--提示红包支付成功失败层-->
+
+                <div class="clite-show-img" id="pictureDelete">
+                    <img src="../source/img/delete.png">
+                    <div class="clite-pointNumber" id="pictureMath">0</div>
+                </div>
+
+            </div>
+
+<div id="backgroundTU" >
+    <div class="backgroundTUxuan">
+        <!--<img src="../source/img/xuan.png">-->
+    </div>
+</div>
+
+<!--这是独立的一段-->
+<div id="pictureAnimate">
+    <img src="../source/img/delete.png">
+</div>
+
+<!-- end of wrapper -->
+
+<script src="../source/js/body-outside.js"></script>
+<script src="../source/js/iscroll.min.js"></script>
+<script>
+    document.write("<script src=\"../source/js/add-challenge.js"
+                //+"?t="+Math.random()
+            + "\"><\/script>");
+</script>
+
+</body>
+
+</html>

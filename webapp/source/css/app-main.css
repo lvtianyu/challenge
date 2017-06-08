@@ -1,0 +1,217 @@
+body{
+  font-size: 16px;
+  background: #f2f2f0;
+}
+
+/*头基本样式*/
+.clite-head {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  color: #212121;
+  font-size: 16px;
+  height: 48px;
+  line-height: 48px;
+}
+
+/*头返回样式*/
+.clite-head-back{
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  position: absolute;
+  left: 16px;
+  top: 0;
+  cursor: pointer;
+}
+
+/*头返回右侧文本样式*/
+.clite-head-right{
+  display: inline-block;
+  height: 48px;
+  line-height: 48px;
+  color: #31c4cc;
+  position: absolute;
+  right: 16px;
+  top: 0;
+  cursor: pointer;
+}
+
+/*返回箭头*/
+.clite-back-img{
+     width: 10px;
+     margin-right: 2px;
+ }
+
+/*白色背景*/
+.clite-bg-white{
+  background: #fff;
+}
+
+/*列表行*/
+.clite-row{
+  border-bottom: 1px solid #e6e6e6;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/*左右间距16px*/
+.clite-margin{
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+/*行左*/
+.clite-row-left{
+  height: 48px;
+  line-height: 48px;
+  color: #212121;
+}
+
+/*行右*/
+.clite-row-right{
+  height: 48px;
+  line-height: 48px;
+  color: #212121;
+}
+
+/*行右*/
+.clite-row-right2{
+  /*height: 48px;
+  line-height: 48px;*/
+  color: #212121;
+}
+
+/*行左头像行*/
+.clite-row-left-img{
+  height: 56px;
+  line-height: 56px;
+  color: #212121;
+}
+
+/*行右头像行*/
+.clite-row-right-img{
+  height: 56px;
+  line-height: 54px;
+  color: #212121;
+}
+
+/*头像样式*/
+.clite-head-img{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+/*默认头像样式*/
+.clite-default-head-img{
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #c7c7cc;
+}
+
+/*头像文字样式*/
+.clite-head-text{
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  line-height: 44px;
+  color: #212121;
+  font-size: 20px;
+  text-align: center;
+  background: #eee;
+  display: inline-block;
+}
+
+/*垂直居中*/
+.clite-vertical-middle{
+  vertical-align: middle;
+}
+
+.clite-next-img{
+  width:10px;
+}
+
+/*表单中录入框样式*/
+form .clite-row div input{
+  border-width: 0;
+  box-shadow:inset 0 0 0 rgba(255, 0, 0, 0);
+  height: 48px;
+  /*line-height: 48px;*/
+  border-radius: 0;
+  padding-left: 0;
+  font-size: 16px;
+  width: 100%;
+}
+
+/*表单中录入框样式*/
+form .clite-row div textarea{
+  border-width: 0;
+  box-shadow:inset 0 0 0 rgba(255, 0, 0, 0);
+  /*height: 48px;*/
+  /*line-height: 48px;*/
+  border-radius: 0;
+  padding-left: 0;
+  font-size: 16px;
+  width:100%;
+  height: 100px;
+}
+
+
+.clite-form-input[disabled], .clite-form-input[readonly], clite-form-input[disabled] .clite-form-input {
+    background-color: #fff;
+    opacity: 1;
+}
+
+/*padding值上下左右0*/
+.clite-padding0{
+  padding:0 0;
+}
+
+/*青色按钮样式*/
+.clite-btn-bg{
+  background: #31e2cb;
+  border: 1px solid #31e2cb;
+  color: #fff;
+}
+
+/*青色按钮点击样式*/
+.clite-btn-bg:hover,.clite-btn-bg:focus{
+  background: #29ceb9;
+  border: 1px solid #29ceb9;
+  color: #fff;
+}
+
+/*大按钮高度*/
+.clite-btn-height{
+  padding: 9px 12px;
+  font-size: 16px;
+}
+
+/*获取验证码向上挪动四个像素*/
+.clite-margin4{
+  margin-top: -4px;
+}
+
+/*margin-top 20px*/
+.clite-margintop20{
+  margin-top: 20px;
+}
+
+.clite-prompt-message{
+  color: #b2b2b2;
+  font-size: 14px;
+  padding: 8px 16px 0 16px;
+}
+
+.clite-prompt-message1{
+  color: #b2b2b2;
+  font-size: 14px;
+  padding: 8px 16px 8px 16px;
+}
+
+/* liy 2016-01-14 增加5px*/
+.clite-margintop5{
+	margin-top: 5px;
+}

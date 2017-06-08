@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head lang="ch">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <script src="../source/js/locache.min.js"></script>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+</head>
+<body>
+
+<h1><a href="javascript: toHome()">正在转接中，如果您的浏览器没有自动跳转，请点击这里</a></h1>
+<script>
+    var protocol = "http://";
+
+    var nodejsServerIp = "camp.liver-cloud.com";//测试
+    //var nodejsServerIp = "10.0.1.22:8080";//测试
+
+    var nodejsServerPort = ""; //测试
+    var dataType = "json"; //测试环境允许其他人直接访问接口时使用
+
+    var contextPath = "/eyun_challenge_lite";
+//    var serverHome = protocol + nodejsServerIp + nodejsServerPort + contextPath;
+
+    //本页面是用来接收微信登录的返回信息，收到后会将信息保存到本地存储，然后将页面转向到首页
+    var redirectData = {
+        r: "",
+        p: ""
+    };
+    window.onload = function () {
+
+        var test1 = location.search.substring(1);//"u=a&b=汉字&c=2:b"
+
+        //console.log(encodeURIComponent(test1)+ "<br />");
+        //console.log(decodeURIComponent(test1));
+        //alert("search: " + test1);
+
+        var d = decodeURIComponent(test1); //["nick=a", "name=b", "head=c"]
+        //console.log(d.split("&"));
+        //alert("decodeURIComponent: " + d);
+
+        var e = decodeURI(test1);
+        //alert("decodeURI: " + e);
+
+        var array = d.split("&");
+        //nickname,userName,headimgurl,openid,u
+        //u的内容是json字符串
+        /* _redirectDataPojo = {
+         redirectPage : "/pages/index.html", //以/开头，写全文件名
+         param: "", //去掉?后面的必要参数
+         } */
+
+        for (var i = 0, len1 = array.length; i < len1; i++) {
+            var obj = array[i];
+
+            var items = obj.split("=");
+            //alert("items: "+items);
+            console.log(items[0] + ":" + items[1]);
+
+            if ("r" == items[0] && "" != items[0]) {
+
+                var jsonstr = obj.substring(2);
+
+                var parray = jsonstr.substring(1, jsonstr.length - 1).split(",");
+
+                console.log("jsonstr: " + jsonstr);
+                /* */
+
+                for (var j = 0, len2 = parray.length; j < len2; j++) {
+                    var kv = parray[j].split(":");
+                    if (kv[0] == "r") {
+                        redirectData.r = kv[1]; //r:redirectPage
+                    } else if (kv[0] == "p") {
+                        redirectData.p = kv[1]; //p:param
+                    }
+                }
+
+                //redirectData = items[1];//jsonstr; //eval("("+jsonstr+")");
+                continue;
+            }
+
+            locache.session.set(items[0], items[1]);
+        }
+
+        toHome();
+    };
+
+    function toHome() {
+        /* if(undefined != redirectPage && null != redirectPage && ""!=redirectPage) {
+         redirectPage = redirectPageParam;
+         } */
+        //var _redirectDataJson = JSON.parse(redirectData);
+
+        var _page = redirectData.r,
+                _param = redirectData.p,
+                page,
+                param;
+
+//        if (undefined == _page || null == _page || "" == _page) {
+            page = locache.session.get("r");
+
+//        } else {
+//            page = _page;
+//        }
+
+        if (undefined == _param || null == _param || "" == _param) {
+            param = "";
+        } else {
+            param = "?" + _param;
+        }
+
+        var homeurl = page ;
+        //location.replace(homeurl);
+        alert(homeurl);
+        location.href = homeurl;
+    }
+</script>
+</body>
+</html>

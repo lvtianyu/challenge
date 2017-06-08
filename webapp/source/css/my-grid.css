@@ -1,0 +1,92 @@
+.clite-mygrid-border{
+  border-top: 1px solid #e7e7e7;
+}
+
+.clite-mygrid-margin16{
+  margin: 0 16px;
+}
+
+.clite-mygrid-table{
+  table-layout: fixed;
+}
+
+.clite-mygrid-table>tbody>tr>td{
+  padding: 13px 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-top-width: 0;
+}
+
+.clite-mygrid-td1{
+  width: 44px;
+}
+
+.clite-mygrid-td2{
+  width: 114px;
+  text-align: right;
+}
+
+.clite-listleft-img{
+  width: 44px;
+  height: 44px;
+  /*border-radius:4px;*/
+}
+
+.clite-mygrid-name{
+  font-size: 16px;
+  color: #545454;
+  margin: auto 8px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.clite-mygrid-text{
+  color: #b2b2b2;
+  font-size: 12px;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin: 2px 8px auto 8px;
+}
+
+.clite-mygrid-imgright{
+  width: 32px;
+  height: 32px;
+  border-radius:17px;
+  border: 1px solid #cccccc;
+  margin-top: 6px;
+  /*float: right;*/
+  margin-left: 2px;
+  line-height: 32px;
+  text-align: center;
+  display: inline-block;
+  margin-right: -1px;
+}
+
+.clite-mygrid-imgright:hover{
+  width: 32px;
+  height: 32px;
+  border-radius:17px;
+  border: 1px solid #cccccc;
+  margin-top: 6px;
+  /*float: right;*/
+  margin-left: 2px;
+  line-height: 32px;
+  text-align: center;
+  background: #f0f0f0;
+  display: inline-block;
+}
+
+.clite-mygrid-marginLeft{
+  margin-left: 8px;
+}
+
+.clite-mygrid-updown{
+  color: #31e2cb;
+  font-size: 14px;
+}
+
+.clite-mygrid-close{
+  color: #db0808;
+  font-size: 14px;
+}

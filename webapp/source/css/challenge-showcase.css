@@ -1,0 +1,103 @@
+.clite-gradientbg{
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#2ccccc), to(#45e8cd));
+  background: -moz-linear-gradient(left, #2ccccc, #45e8cd);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  height: 120px;
+}
+
+.clite-container1 {
+    background: #fff;
+    padding: 0px 16px;
+}
+
+.clite-container1 {
+    background: #fff;
+    padding: 0px 16px;
+}
+
+.clite-like-row-left {
+  height: 52px;
+  line-height: 52px;
+  color: #fff;
+  font-size: 40px;
+  position: relative;
+}
+
+.clite-like-datatext {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 4px;
+}
+
+.clite-like-margintop10 {
+  margin-top: 10px;
+}
+
+.mood-weather-wrapper {
+	padding: 15px 0 0 0 ;
+}
+
+.clite-icon-mw{
+  width:40px;
+  height:40px;
+  position:absolute;
+  right:16px;
+  top:10px;
+}
+
+.clite-icon-mw1{
+  width:40px;
+  height:40px;
+  position:absolute;
+  right:56px;
+  top:10px;
+}
+
+.clite-ul{
+  list-style-type: none;
+}
+
+.clite-ul li{
+  list-style-type: none;
+  float: right;
+  text-align: right;
+  margin: 2px 6px;
+}
+
+.clite-ul li img{
+  width: 24px;
+}
+
+.clite-activity-no{
+  text-align: center;
+  color: #fff;
+  margin-top: 28px;
+}
+
+.clite-clickback{
+  text-align: center;
+  margin: 30px auto;
+}
+
+.clite-clickback img{
+  width: 30px;
+}
+
+.clite-clickback div{
+  font-size: 14px;
+  color: #aaaaaa;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.clite-well-known{
+  color: #d4d4d4;
+  text-align: center;
+  margin: auto 16px;
+}
+
+.clite-margin-top16{
+  margin-top: 16px;
+}

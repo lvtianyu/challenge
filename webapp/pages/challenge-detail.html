@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>挑战详情</title>
+<script src="../source/js/head-inside.js"></script>
+	<script>
+
+		// if (!userName) {
+
+		// 	checkWxLogin("pages/challenge-detail.html")
+		// }
+
+	</script>
+<link rel="stylesheet" href="../source/css/challenge-detail.css">
+<link rel="stylesheet" href="../source/css/iscroll.css">
+
+</head>
+<body>
+		<!--<div  id="zan">-->
+			<!--<div class="zan">-->
+				<!--<img src="../source/img/zan.png">-->
+			<!--</div>-->
+			<!--&lt;!&ndash;<div class="zanText"><span>可以点击“赞”“赏”哦</span></div>&ndash;&gt;-->
+		<!--</div>-->
+	<!--<div id="wrapper">-->
+		<!--<div id="scroller">-->
+			<!--<div id="scroller-pullDown">-->
+				<!--<span id="down-icon" class="pull-down-icon">↓</span>-->
+				<!--<span id="pullDown-msg" class="pull-down-msg">回到首页</span>-->
+			<!--</div>-->
+			<!--<div id="scroller-content">-->
+				<!-- <div
+					style="background: #fff; height: 1000px;"
+				></div> -->
+			<!--头部-->
+			<nav class="navbar navbar-default " id="page1"> <!--  navbar-fixed-top  -->
+				<div class="container-fluid head">
+					<div class="">
+						<div class="row">
+							<div class="col-xs-2 headPadding-right">
+								<div class="headPicture">
+									<img src="../source/img/img-defaule-head.png">
+								</div>
+							</div>
+							<div class="col-xs-5 headPadding-left">
+								<div class="nickName">
+
+								</div>
+								<div class="gameDay">
+
+								</div>
+							</div>
+						</div>
+
+						<div class="clite-margintop-40">
+							<ul class="clite-ul clearfix" id="upMood">
+								<!-- <li><img src="../source/img/people.png" title="" /></li> -->
+								<li><img id="xinqing" src="../source/img/img-face11-01.png"
+									title="" /></li>
+								<li><img id="tianqi" src="../source/img/img-day11-01.png"
+									title="" /></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+
+
+			<!--主体-->
+			<div class="container-fluid zhuti clite-padding0">
+<!--分享前的个人主体-->
+		      <div class="row dpen-margin clite-marginlr0" id="share-prev" >
+		          <div class="welfare ">
+		              <div class="border">
+		                  <div class="red-welfare">红包福利</div>
+		                  <div id="welfare-number">0</div>
+		              </div>
+		          </div>
+		          <div class="col-xs-12  pen-padding share-prev text-right" id="detailpen" >
+		              <img src="../source/img/detail-pen.png" title="修改活动信息" class="detail-pen-size">
+		          </div>
+
+					<div class="row clite-marginlr0 total-margin-bottom" id="doing">
+						<div class="col-xs-12">
+							<span class="glyphicon glyphicon-fire title-center"> <span
+								class="total-color"> 总计 <span class="total-color"
+									id="totalText">0</span>卡路里
+							</span>
+							</span>
+						</div>
+					</div>
+				  <div class="row clite-marginlr0 total-margin-bottom share-get-friend">
+					  <div class="col-xs-6 workDoneRight">
+							<span class="workDonePicture1">
+								<img src="../source/img/fire.png">
+							</span>目标<span id="finalCalorie"></span>卡
+					  </div>
+					  <div class="col-xs-6">
+						  <span id="workDone" class="workDonePicture">
+							 <img src="../source/img/img-face-03.png" id="fqokImg">
+						  </span>完成<span class="lastText">0</span>卡
+					  </div>
+				  </div>
+					<div class="row clite-marginlr0 text-small">
+						<div class="col-xs-12  progress-padding ">
+							<div class="progress progress-radius">
+								<div class="progress-bar progress-bar-te" style="width: 80%"
+									id="target-challenge-percentage"></div>
+								<div
+									class="progress-bar progress-bar-warning progress-bar-striped"
+									style="width: 20%" id="add-challenge-percentage"></div>
+							</div>
+						</div>
+					</div>
+					<div class="row clite-marginlr0 text-small">
+						<div class="col-xs-12">
+							<div class="row mubiao-add-padding" >
+								<div class="col-xs-6 progress-color1">
+									目标<span class="target-challenge-number" id="target-challenge-number">0</span>卡
+								</div>
+								<div class="col-xs-6 progress-color2">
+									朋友支持<span id="add-challenge-number">0</span>卡
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--点赞按钮层-->
+			<div class="container-fluid best-game" id="best-game">
+				<div class="row">
+					<div class="col-xs-6" style="padding-left: 55px;">
+						<div class="row">
+							<div class="col-xs-12" style="padding-left: 20px;">
+								<div class="operation-icon1 text-center" id="heart">
+
+									<img src="../source/img/operation-icon05.png"  id="clickHeart"/>
+		                          <span id="heartA" class=" glyphicon-heart-color"  >+1</span>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 text-small">
+								<span id="heartText">0</span>人点赞
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-6 text-right" data-toggle="modal" data-target="#myModal" id="tesu" style="padding-right: 55px;">
+
+						<div class="row">
+							<div class="col-xs-12" style="padding-right: 20px">
+								<div class="operation-icon1 text-center" id="thumbs">
+									<img src="../source/img/operation-icon06.png" id="clickThumbs"/>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12 text-small">
+								<span id="thumbsText">0</span>元
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row clite-marginlr0">
+							<div class="col-xs-12 no-padding" id="">
+								<span class="detailDescribe" id="detailDescribe">亲！可以加一些描述啊</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid photo" id="photo">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+					</div>
+				</div>
+			</div>
+
+			<!--</div>-->
+			<!--<div id="scroller-pullUp">-->
+				<!--<span id="up-icon" class="pull-up-icon">-->
+					<!--&lt;!&ndash; ↑ &ndash;&gt;-->
+				<!--</span>-->
+				<!--<span id="pullUp-msg" class="pull-up-msg">-->
+					<!--&lt;!&ndash; 上拉加载更多 &ndash;&gt;-->
+				<!--</span>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+			<!--footer部分-->
+			<nav class="navbar navbar-default navbar-bordertop navbar-fixed-bottom ">
+
+				<!--分享前的页面显示区域 -->
+
+				<div class="container-fluid text-cursor share-prev">
+					<div class="row">
+						<div class="col-xs-4 clite-padding0" id="challengeOk">
+							<div class="row">
+								<div class="col-xs-12 clite-padding0">
+									<div class="operation-icon text-center" id="ok">
+										<img src="../source/img/operation-icon01.png" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-padding0 text-small" id="challengeOkText">挑战完成</div>
+							</div>
+						</div>
+						<div class="col-xs-4 clite-padding0" id="stone">
+							<div class="row">
+								<div class="col-xs-12 clite-padding0">
+									<div class="operation-icon text-center" id="heart-empty">
+										<img src="../source/img/operation-icon02.png" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-padding0 text-small">点赞榜</div>
+							</div>
+						</div>
+						<div class="col-xs-4 clite-padding0 messageAll" >
+							<div class="row">
+								<div class="col-xs-12 clite-padding0">
+									<div class="operation-icon text-center">
+										<img src="../source/img/operation-icon03.png" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-padding0 text-small">留言</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--分享后的朋友看见的下部按钮-->
+				<!--<div class="container-fluid text-cursor share" id="share-btn">-->
+					<!--<div class="row">-->
+						<!--<div class="col-xs-12">-->
+							 <!--<button class="btn clite-btn-bg btn-block clite-btn-height clite-margintop4" type="button" id="my-want-challenge">-->
+								<!--我也挑战</button>-->
+							<!--</div>-->
+						<!--</div>-->
+				<!--</div>-->
+
+				<div class="container-fluid text-cursor share" id="share-btn">
+					<div class="row">
+						<div class="col-xs-4 clite-padding0" id="my-want-challenge">
+							<div class="row">
+								<div class="col-xs-12 clite-padding0">
+									<!--glyphicon glyphicon-user glyphicon-footer-color-->
+									<div class="operation-icon text-center" id="user">
+										<img src="../source/img/operation-icon04.png" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-padding0 text-small">我也挑战</div>
+							</div>
+						</div>
+
+						<div class="col-xs-offset-4 col-xs-4 clite-padding0 messageAll" >
+							<div class="row">
+								<div class="col-xs-12 clite-padding0">
+									<!--glyphicon glyphicon-comment glyphicon-footer-color-->
+									<div class="operation-icon text-center">
+										<img src="../source/img/operation-icon03.png" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-padding0 text-small">留言</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<!--模态框---->
+			<!-- Button trigger modal -->
+			<!-- Modal -->
+		<!--支付层-->
+			<div class="modal fade in" id="myModal" tabindex="-1" role="dialog"
+				aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header" >
+							<button type="button" class="close" data-dismiss="modal"
+								aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-xs-12">请您支付两元来支持我的挑战，将为我增加10卡路里的运动目标。</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="yuan">
+										<img src="../source/img/1yuan.png" class="img-money">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-xs-12 clite-red-text">挑战结束后我会把所有福利包成红包发给大家</div>
+								<!--<div class="col-xs-12 clite-redMoney">当前红包余额：<span id="redbag-amount">0</span>元</div>-->
+							</div>
+						</div>
+						<div class="modal-footer">
+							<div class="row weixinBottom">
+								<div class="col-xs-12 ">
+									<div class="weixin clite-btn-bg btn-block clite-btn-height"
+										id="weixin">微信支付</div>
+								</div>
+							</div>
+							<!--<div class="row weixinBottom">-->
+								<!--<div class="col-xs-12 ">-->
+									<!--<div class="weixin clite-btn-bg btn-block clite-btn-height"-->
+										 <!--id="redPay">红包支付</div>-->
+								<!--</div>-->
+							<!--</div>-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!--刷新浮层-->
+			<div id="backgroundTU" style="display: none">
+				<div class="backgroundTUxuan">
+					<img src="../source/img/xuan.png">
+				</div>
+			</div>
+
+			<div id="remindPicture" class="remindPecture">
+				<div class="remindPicture-up">
+					<div class="remindPicture-pullDown">
+						<img src="../source/img/pullDown.png">
+					</div>
+					<div class="remindPicture-goUpIndex">
+						<img src="../source/img/goUpIndex.png">
+					</div>
+				</div>
+				<div class="remindPicture-center">
+					<img src="../source/img/lDo.png">
+				</div>
+			</div>
+	<!--打赏-->
+		<script>
+			document.write("<script src=\"../source/js/challenge-detail.js"
+					//+"?t="+ Math.random()
+					+ "\"><\/script>");
+		</script>
+	<script src="../source/js/body-outside.js"></script>
+	<script src="../source/js/head-calendar-public.js"></script>
+
+</body>
+</html>

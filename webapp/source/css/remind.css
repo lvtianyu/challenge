@@ -1,0 +1,50 @@
+.remindPecture{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.75);;
+    /*opacity: 0.7;*/
+    z-index: 9999;
+    display: none;
+}
+
+.remindPecture img{
+    max-width: 100%;
+}
+.remindPicture-pullDown{
+    margin:5px auto;
+    width:80px;
+    height:80px;
+    -webkit-animation: sxia 2s infinite;
+    -ms-animation: sxia 3s infinite;
+    animation: sxia 2s infinite;
+}
+
+.remindPicture-down{
+    position: absolute;
+    left: 0;
+    right:0;
+    bottom: 5px;
+}
+
+@-webkit-keyframes sxia{
+    from{
+        transform: translateY(0);
+    }
+    25%{transform: translateY(-5px)}
+    50%{transform: translateY(-15px)}
+    75%{transform: translateY(-25px)}
+    100%{transform: translateY(0)}
+}
+
+@-ms-keyframes sxia{
+    from{
+        transform: translateY(0);
+    }
+    25%{transform: translateY(-5px)}
+    50%{transform: translateY(-15px)}
+    75%{transform: translateY(-25px)}
+    100%{transform: translateY(0)}
+}

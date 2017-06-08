@@ -1,0 +1,61 @@
+body {
+  background: #fff;
+}
+.clite-mw-head {
+  font-size: 18px;
+  color: #212121;
+  text-align: center;
+  margin: 26px auto;
+}
+.clite-mw-foreblock div img {
+  width: 30px;
+  margin: auto auto;
+}
+.clite-mw-foreblock div {
+  height: 60px;
+  line-height: 60px;
+}
+.clite-mw-title {
+  color: #aaaaaa;
+  font-size: 16px;
+}
+.clite-btn-confirm {
+  background: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 1;
+}
+.clite-btn-confirm:hover {
+  background: #cccccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  z-index: 1;
+}
+.clite-mw-placeholder {
+  height: 48px;
+}
+
+/*.moodweather-transition{
+  transition:moodweather-transform 2s;
+  -moz-transition:moodweather-transform 2s;
+  -webkit-transition:moodweather-transform 2s;
+  -o-transition:moodweather-transform 2s;
+}
+
+.moodweather-transform{
+  transform: scale(1);
+  transition: all 1s ease;
+  -moz-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+}*/
